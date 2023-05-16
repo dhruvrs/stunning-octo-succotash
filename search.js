@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const NeDB = require('nedb');
 
-let db = new NeDB({ filename: 'your_database.db', autoload: true });
+let db = new NeDB({ filename: 'Data/books.db', autoload: true });
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
